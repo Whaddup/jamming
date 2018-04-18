@@ -1,3 +1,7 @@
+/* Note: I realize that this code doesn't compile properly. This was more an attempt for me to learn
+more about Javascript and React by writing this project all the way to the finish and see how far I could push myself*/
+
+
 //import React from 'react';
 //import ReactDOM from 'react-dom';
 
@@ -19,7 +23,7 @@ getAccessToken(){
 //Step 78
   if (typeof accessToken != "undefined"){
     return accessToken}
-    else if {let url = window.location.href;
+    else {let url = window.location.href;
       let tokenExpiryInfo = []
       let expirationTime = 0;
     tokenExpiryInfo.push(url.match(/access_token=([^&]*)/));
@@ -30,7 +34,8 @@ getAccessToken(){
     window.setTimeout(() => accessToken = '', expiresIn * 1000);
 window.history.pushState('Access Token', null, '/');
 }
-  else {window.location = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectURI}`
+  else if {window.location = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectURI}`;
+  return window.location
   }
 }
 
